@@ -1,12 +1,13 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const { nanoid } = require('nanoid');
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import { nanoid } from 'nanoid';
+import jwt from 'jsonwebtoken';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const Url = require('./models/Url');
-const Admin = require('./models/Admin');
+import Url from './models/Url.js';
+import Admin from './models/Admin.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;

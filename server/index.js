@@ -81,7 +81,7 @@ app.post('/api/shorten', async (req, res) => {
       return res.json({
         originalUrl: url.originalUrl,
         shortCode: url.shortCode,
-        shortUrl: `http://localhost:${PORT}/${url.shortCode}`
+        shortUrl: `https://url-shortner-3-9ust.onrender.com/${url.shortCode}`
       });
     }
 

@@ -33,7 +33,7 @@ const AdminDashboard: React.FC<AdminDashboardProps> = ({ onLogout }) => {
 
   const fetchUrls = async () => {
     try {
-      const response = await fetch('http://localhost:3001/api/admin/urls', {
+      const response = await fetch('https://url-shortner-3-9ust.onrender.com/api/admin/urls', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },

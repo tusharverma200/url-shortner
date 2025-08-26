@@ -22,7 +22,7 @@ const UrlShortener: React.FC = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:3001/api/shorten', {
+      const response = await fetch('https://url-shortner-3-9ust.onrender.com/api/shorten', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

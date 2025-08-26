@@ -59,6 +59,10 @@ const authenticateAdmin = async (req, res, next) => {
 
 // Routes
 
+app.get('/', (req, res) => {
+  res.send('URL Shortener Service is running');
+});
+
 // POST /api/shorten - Create shortened URL
 app.post('/api/shorten', async (req, res) => {
   try {
@@ -105,7 +109,7 @@ app.post('/api/shorten', async (req, res) => {
     res.json({
       originalUrl: url.originalUrl,
       shortCode: url.shortCode,
-      shortUrl: `http://localhost:${PORT}/${url.shortCode}`
+      shortUrl: `https://url-shortner-3-9ust.onrender.com/${url.shortCode}`
     });
   } catch (error) {
     console.error('Error shortening URL:', error);
